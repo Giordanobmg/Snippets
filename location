@@ -1,0 +1,28 @@
+PUT my-index-000001/_doc/1
+{
+ "text": "Geopoint como objeto",
+ "location": { 
+ "lat": 41.12,
+ "lon": -71.34
+ }
+}
+PUT my-index-000001/_doc/2
+{
+ "text": "Geopoint como string",
+ "location": "41.12,-71.34" 
+}
+PUT my-index-000001/_doc/3
+{
+ "text": "Geopoint como geohash",
+ "location": "drm3btev3e86" 
+}
+PUT my-index-000001/_doc/4
+{
+ "text": "Geopoint como array",
+ "location": [ -71.34, 41.12 ] 
+}
+PUT my-index-000001/_doc/5
+{
+ "text": "Geopoint como WKT POINT primitivo",
+ "location" : "POINT (-71.34 41.12)" 
+}
